@@ -18,6 +18,11 @@ exports.npm = {
   }
 };
 
+exports.paths = {
+  public: './public',
+  watched: ['app']
+}
+
 // Turn off growl
 exports.notifications = false;
 

@@ -8,7 +8,7 @@
 export default {
   name: "hello",
   data() {
-    const test = {}
+    const test = {};
     return {
       msg: "Welcome to Your Vue.js App, bundled with Brunch!"
     };
@@ -19,11 +19,7 @@ export default {
 <style lang="sass" scoped>
 @import './../variables.scss';
 
-.test {
-  a {
-    font-size: 19px;
-    display: flex;
-    color: $vue-blue;
-  }
+.h1 {
+  color: $vue-green;
 }
 </style>
