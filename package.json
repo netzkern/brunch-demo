@@ -7,14 +7,17 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server --jobs 4",
-    "build": "brunch build --production"
+    "build": "brunch build --production",
+    "format": "prettier ./*.js --write"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "vue": "^2.5.9"
+    "left-pad": "^1.2.0",
+    "svelte": "^1.46.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
+    "autoprefixer": "^7.2.2",
     "babel-brunch": "~6.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
@@ -22,10 +25,14 @@
     "copycat-brunch": "^1.1.0",
     "csswring": "^6.0.2",
     "node-sass": "^4.7.2",
+    "postcss": "^6.0.14",
     "postcss-brunch": "^2.1.0",
-    "prettier": "^1.8.2",
+    "prettier": "^1.9.1",
     "sass-brunch": "^2.10.4",
-    "uglify-js-brunch": "^2.10.0",
-    "vue-brunch": "^2.0.1"
+    "sveltejs-brunch": "^0.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

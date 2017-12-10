@@ -1,10 +1,5 @@
-import Vue from "vue";
-import App from "./App.vue";
+import Clock from "./components/Clock.svelte"
 
-Vue.config.productionTip = false;
-
-new Vue({
-  el: "#app",
-  components: { App },
-  render: h => h(App)
-});
+const component = new Clock({
+  target: document.querySelector( 'main' )
+})
