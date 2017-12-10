@@ -1,6 +1,12 @@
-# Brunch+Vue
+# Brunch+Svelte
 
-This is a modern setup to implement Web-Components with [Brunch](http://brunch.io) and [Vue](https://github.com/vuejs/vue)
+This is a modern setup to implement Web-Components with [Brunch](http://brunch.io) and [Svelte](https://github.com/sveltejs/svelte)
+
+## Batteries included
+
+- SASS
+- PostCSS with autoprefixer, csswring
+- Transpiler with babel-preset-env
 
 ## Installation
 
