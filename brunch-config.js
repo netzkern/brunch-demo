@@ -1,7 +1,6 @@
 const sass = require('node-sass')
 const postcss = require('postcss')
 const csswring = require('csswring')
-
 const production = process.env.NODE_ENV === 'production'
 
 // See http://brunch.io for documentation.
@@ -49,6 +48,7 @@ exports.plugins = {
   },
   sveltejs: {
     css: false,
+    cascade: true,
     extractCSS: true,
     out: './public/components.css',
     preprocess: {
@@ -64,14 +64,13 @@ exports.plugins = {
         })
 
         const css = sassResult.css.toString()
-
         const postcssResult = postcss(postCssProcessors).process(css).css
 
         return {
           code: postcssResult,
           map: postcssResult.map
         }
-      }
+      },
     }
   },
   copycat: {
