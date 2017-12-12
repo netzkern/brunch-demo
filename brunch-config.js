@@ -46,10 +46,13 @@ exports.plugins = {
   postcss: {
     processors: postCssProcessors
   },
+  closurecompiler: {
+    compilationLevel: 'SIMPLE'
+  },
   sveltejs: {
-    css: false,
-    cascade: true,
+    dev: !production,
     extractCSS: true,
+    combineSourceMapCSS: true,
     out: './public/components.css',
     preprocess: {
       style: ({ content, attributes }) => {
@@ -59,8 +62,7 @@ exports.plugins = {
           data: content,
           outputStyle: production ? 'compressed' : 'expanded',
           includePaths: ['app'],
-          sourceMap: true,
-          outFile: 'x' // this is necessary, but is ignored
+          sourceMapEmbed : true
         })
 
         const css = sassResult.css.toString()

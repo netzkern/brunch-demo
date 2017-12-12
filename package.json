@@ -7,7 +7,7 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server --jobs 4",
-    "build": "brunch build --production",
+    "build": "brunch build --production --jobs 4",
     "format": "prettier ./*.js --write"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "brunch": "^2",
+    "closure-compiler-brunch": "^0.1.6",
     "copycat-brunch": "^1.1.0",
     "csswring": "^6.0.2",
     "node-sass": "^4.7.2",
@@ -29,8 +30,7 @@
     "postcss-brunch": "^2.1.0",
     "prettier": "^1.9.1",
     "sass-brunch": "^2.10.4",
-    "sveltejs-brunch": "^0.0.1",
-    "uglify-js-brunch": "^2.10.0"
+    "sveltejs-brunch": "^0.0.5"
   },
   "prettier": {
     "semi": false,

@@ -4,9 +4,10 @@ This is a modern setup to implement Web-Components with [Brunch](http://brunch.i
 
 ## Batteries included
 
-- SASS
-- PostCSS with autoprefixer, csswring
-- Transpiler with babel-preset-env
+- Preprocess with SASS
+- PostCSS(autoprefixer, csswring)
+- Transpiling with babel-preset-env
+- JS Optimzation with Closure Compiler
 
 ## Installation
 
